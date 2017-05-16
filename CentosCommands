@@ -1,0 +1,4 @@
+sudo service sshd start
+uname -a
+wget https://nodejs.org/dist/v7.10.0/node-v7.10.0-linux-x64.tar.xz
+tar -xJf node-v7.10.0-linux-x64.tar.xz
