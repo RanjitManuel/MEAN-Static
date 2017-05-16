@@ -1,4 +1,12 @@
 sudo service sshd start
+
+# Node Installation
 uname -a
 wget https://nodejs.org/dist/v7.10.0/node-v7.10.0-linux-x64.tar.xz
 tar -xJf node-v7.10.0-linux-x64.tar.xz
+# Node can be setup by compiling source code or directly using the binaries
+export NODE_HOME=/home/tom/MEAN/components/node-v7.10.0-linux-x64
+export PATH=$PATH:$NODE_HOME/bin
+# Check installation
+node --version
+npm --version
