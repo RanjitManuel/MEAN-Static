@@ -1,4 +1,9 @@
 sudo service sshd start
+sudo service iptables stop
+sudo service ip6tables stop
+# stop firewall on reboot
+sudo chkconfig iptables off
+sudo chkconfig ip6tables off
 
 # Node Installation
 uname -a
