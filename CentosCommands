@@ -1,3 +1,6 @@
+Centos 6.2 x86
+1. Basic OS setup
+------------------
 sudo service sshd start
 sudo service iptables stop
 sudo service ip6tables stop
@@ -5,6 +8,8 @@ sudo service ip6tables stop
 sudo chkconfig iptables off
 sudo chkconfig ip6tables off
 
+2. MEAN stack installation
+--------------------------
 # Node Installation
 uname -a
 wget https://nodejs.org/dist/v7.10.0/node-v7.10.0-linux-x64.tar.xz
@@ -43,4 +48,18 @@ sudo service mongod restart
 
 # Angularjs ~/MEAN/installables/
 wget https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js
+
+3.Express Application (blank)
+------------------------------
+# Create a app folder
+# type 'express' from the folder location - need to check on the options
+npm install
+npm start
+# localhost:3000
+
+
+
+
+
+
 
