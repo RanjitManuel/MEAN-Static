@@ -8,5 +8,22 @@ tar -xJf node-v7.10.0-linux-x64.tar.xz
 export NODE_HOME=/home/tom/MEAN/components/node-v7.10.0-linux-x64
 export PATH=$PATH:$NODE_HOME/bin
 # Check installation
-node --version
-npm --version
+node --version  # v7.10.0
+npm --version   # 4.2.0
+#Express installation
+npm install -g express-generator
+express --version
+#MongoDB installation - https://docs.mongodb.com/manual/tutorial/install-mongodb-enterprise-on-red-hat/
+cd /etc/yum.repos.d/
+sudo touch mongodb-enterprise.repo
+vi mongodb-enterprise.repo
+#Add the repo details
+[mongodb-enterprise]
+name=MongoDB Enterprise Repository
+baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.4/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
+sudo yum install -y mongodb-enterprise
+mongo --version  # v3.4.4
+
