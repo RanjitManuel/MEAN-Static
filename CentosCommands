@@ -27,3 +27,11 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
 sudo yum install -y mongodb-enterprise
 mongo --version  # v3.4.4
 
+#  Start mongoDB services and verify on port 27017
+sudo service mongod start
+sudo tail -400f /var/log/mongodb/mongod.log
+# to start on reboot
+sudo chkconfig mongod on
+# other commands
+sudo service mongod stop
+sudo service mongod restart
