@@ -35,3 +35,7 @@ sudo chkconfig mongod on
 # other commands
 sudo service mongod stop
 sudo service mongod restart
+
+# Angularjs ~/MEAN/installables/
+wget https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js
+
