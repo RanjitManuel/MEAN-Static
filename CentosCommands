@@ -7,6 +7,8 @@ sudo service ip6tables stop
 # stop firewall on reboot
 sudo chkconfig iptables off
 sudo chkconfig ip6tables off
+git installation:
+sudo yum install git; git --version
 
 2. MEAN stack installation
 --------------------------
