@@ -68,6 +68,11 @@ npm install
 npm start
 # localhost:3000
 
+# to test Heroku locally
+# Change package.json to specify "engines" - npm and node
+heroku local
+# localhost:5000
+
 
 
 
