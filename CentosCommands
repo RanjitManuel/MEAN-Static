@@ -17,7 +17,7 @@ mkdir -p /usr/local/lib
 sudo tar -xvzf heroku.tar.gz -C /usr/local/lib
 /usr/local/lib/heroku/install
 heroku --version
-
+heroku login
 
 2. MEAN stack installation
 --------------------------
