@@ -9,6 +9,15 @@ sudo chkconfig iptables off
 sudo chkconfig ip6tables off
 git installation:
 sudo yum install git; git --version
+installation of Heroku:https://devcenter.heroku.com/articles/heroku-cli#standalone-version
+sudo yum install wget
+rpm --query centos-release
+wget https://cli-assets.heroku.com/branches/stable/heroku-linux-amd64.tar.gz -O heroku.tar.gz
+mkdir -p /usr/local/lib
+sudo tar -xvzf heroku.tar.gz -C /usr/local/lib
+/usr/local/lib/heroku/install
+heroku --version
+
 
 2. MEAN stack installation
 --------------------------
