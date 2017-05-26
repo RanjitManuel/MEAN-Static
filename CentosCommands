@@ -73,7 +73,19 @@ npm start
 heroku local
 # localhost:5000
 
+#Deploy in Heroku:
+# 1. Create git repo from the app root folder
+git init
+git add .
+git commit -m "Exp MVC Bootstrap"
 
+# 2. Create Heroku application
+heroku create
+
+# 3. Deploy application 
+git push heroku master
+heroku ps:scale web=1
+heroku open
 
 
 
