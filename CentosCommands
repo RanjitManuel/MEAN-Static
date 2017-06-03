@@ -87,6 +87,24 @@ git push heroku master
 heroku ps:scale web=1
 heroku open
 
+# 4. Installing MongoLab thru Heroku
+# from app root folder
+heroku addons:add mongolab
+# add credit card
+heroku addons:open mongolab
+# Created mongolab-crystalline-62629 as MONGODB_URI
+heroku config:get MONGODB_URI
+# mongodb://heroku_f16bxchn:212e982rpag8fbgc6ig43o4gcg@ds161901.mlab.com:61901/heroku_f16bxchn
+# user: heroku_f16bxchn
+# password: 212e982rpag8fbgc6ig43o4gcg
+# host : ds161901.mlab.com
+# port : 61901
+# database: heroku_f16bxchn
+
+# 5. Dump from local to production
+mkdir -p ~/tmp/mongodump
+mongodump -h localhost:27017 -d Loc8r -o ~/tmp/mongodump
+
 
 
 
