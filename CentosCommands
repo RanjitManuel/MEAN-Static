@@ -100,11 +100,12 @@ heroku config:get MONGODB_URI
 # host : ds161901.mlab.com
 # port : 61901
 # database: heroku_f16bxchn
+# mongo hostname:port/database_name -u username -p password
 
 # 5. Dump from local to production
 mkdir -p ~/tmp/mongodump
 mongodump -h localhost:27017 -d Loc8r -o ~/tmp/mongodump
-
+mongorestore -h ds033669.mongolab.com:33669 -d heroku_app20110907 -u heroku_app20110907 -p 4rqhlidfdqq6vgdi06c15jrlpf ~/tmp/mongodump/Loc8r
 
 
 
